@@ -19,3 +19,28 @@ GET {{ContosoPizza_HostAddress}}/pizza/6
 Accept: application/json
 
 ###
+
+POST {{ContosoPizza_HostAddress}}/pizza/
+Content-Type: application/json
+
+{
+    "name": "Sausage",
+    "isGlutenFree": false
+}
+
+###
+
+PUT {{ContosoPizza_HostAddress}}/pizza/6
+Content-Type: application/json
+
+{
+    "id": 6,
+    "name": "Anchovy",
+    "isGlutenFree": false
+}
+
+###
+
+DELETE {{ContosoPizza_HostAddress}}/pizza/6
+
+###
